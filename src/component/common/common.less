@@ -1,0 +1,160 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: .24rem;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, html {
+  height: 100%;
+  touch-action: none;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, img, a {
+  user-select: none;
+}
+
+.box_container {
+  height: 100%;
+  & > div {
+    height: inherit;
+  }
+}
+
+.coins {
+  span.coins {
+    font-family: DINCond-Bold;
+    font-size: .4rem;
+    color: #FFCE28;
+    margin-left: .05rem;
+  }
+  img {
+    width: .28rem;
+    height: .31rem;
+    margin-left: .08rem;
+  }
+  .day {
+    font-family: DINCond-Bold;
+    font-size: .4rem;
+    color: #FFFFFF;
+    span {
+      font-size: .36rem;
+      font-family: PingFangSC-Regular;
+      margin-left: .045rem;
+    }
+  }
+}
+
+.am-list-body::after, .am-list-body::before {
+  display: none;
+  opacity: 0;
+}
+
+.alert_container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .2);
+  top: 0;
+  transition: all .4s ease;
+  z-index: 100;
+  .alert_ {
+    position: absolute;
+    overflow-y: auto;
+    left: 50%;
+    width: 8.8rem;
+    height: 6.6rem;
+    border-radius: .2rem;
+    background: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    .close {
+      width: .31rem;
+      height: .31rem;
+      position: absolute;
+      padding: .33rem;
+      right: 0;
+      top: 0;
+    }
+    h1 {
+      font-family: PingFangSC-Medium;
+      font-size: .6rem;
+      color: #000000;
+      text-align: center;
+      padding-top: .8rem;
+    }
+    & > p {
+      font-family: PingFangSC-Regular;
+      font-size: .3rem;
+      color: rgba(0, 0, 0, .3);
+      text-align: center;
+      padding-top: .24rem;
+    }
+    .icons {
+      display: flex;
+      padding: 0 1.1rem;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.06rem;
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+      p {
+        text-align: center;
+        color: rgba(0, 0, 0, .3);
+        margin-top: .14rem;
+        font-size: .3rem;
+      }
+    }
+  }
+}
+
+.am-toast-text-info {
+  font-size: .36rem;
+}
